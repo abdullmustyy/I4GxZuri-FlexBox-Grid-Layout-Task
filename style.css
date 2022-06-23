@@ -11,16 +11,13 @@ body {
     background: hsl(0, 0%, 95%);
     font-size: 15px;
     line-height: 1.5;
-    /* overflow: hidden; */
-    padding: 20rem 20rem;
 }
 
 button {
     border: none;
     border-radius: 50px;
-    bottom: 2.5rem;
-    padding: 0.8rem 1.8rem;
-    /* position: absolute; */
+    padding: 12px 20px;
+    width: 70%;
 }
 
 button:hover {
@@ -33,18 +30,20 @@ h1 {
     font-weight: bolder;
 }
 
-p {
-    color: hsla(0, 0%, 100%, 0.75);
-    font-family: 'Lexend Deca', sans-serif;
-    font-size: 0.9rem;
+img {
+    width: 50px;
+    height: auto;
 }
 
 h1,
-svg {
+img {
     margin-bottom: 10%;
 }
 
 p {
+    color: hsla(0, 0%, 100%, 0.75);
+    font-family: 'Lexend Deca', sans-serif;
+    font-size: 0.9rem;
     margin-bottom: 35%;
 }
 
@@ -53,7 +52,8 @@ ul {
 }
 
 .container {
-    max-width: 1440px;
+    height: auto;
+    max-width: 60%;
     margin: 0 auto;
 }
 
@@ -91,26 +91,6 @@ ul {
     justify-content: space-between;
 }
 
-.header .container button {
-    border: none;
-    border-radius: 3rem;
-    Box-shadow:
-        0 10px 20px rgba(0, 0, 0, 0.19),
-        0 6px 6px rgba(0, 0, 0, 0.23);
-    background: white;
-    font-family: 'Open Sans', sans-serif;
-    font-size: large;
-    font-weight: 700;
-    height: 4rem;
-    padding: 0rem 4rem;
-    position: static;
-}
-
-.header .container button:hover {
-    color: lighten(var(--primaryColor), 50%);
-    opacity: 0.6;
-}
-
 .header li {
     margin-right: 2rem;
 }
@@ -125,7 +105,8 @@ ul {
 main .container {
     /* align-items: center; */
     display: flex;
-    height: 100%;
+    height: auto;
+    overflow: hidden;
     /* width: 100%; */
 }
 
@@ -134,13 +115,13 @@ main .container {
 }
 
 .main .item {
-    /* justify-content: space-between; */
+    justify-content: space-between;
     display: flex;
-    flex: 1;
     flex-direction: column;
-    height: 90%;
-    padding: 2.5rem 3rem;
+    height: auto;
+    padding: 2rem;
     position: relative;
+    width: calc(1/3 * 100%);
 }
 
 .sedan-div {
@@ -157,7 +138,6 @@ main .container {
     background: hsl(31, 77%, 52%);
     border: 1px solid white;
     color: hsl(0, 0%, 95%);
-    ;
 }
 
 .suv-div {
