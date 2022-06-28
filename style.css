@@ -180,19 +180,36 @@ main .container {
 }
 
 @media (max-width: 376px) {
+    * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+    }
+
     body {
         overflow: auto;
         padding: 0 1rem 1rem;
     }
 
     button {
-        bottom: 1rem;
+        margin: 0 auto;
+    }
+
+    h1 {
+        margin: 0 auto 1.5rem;
+        width: -moz-fit-content;
+        width: fit-content;
+    }
+
+    p {
+        margin-bottom: 20%;
+        text-align: center;
     }
 
     .container {
-        margin: 0 auto;
+        margin: 0;
         padding: 0;
-        width: 100%;
+        max-width: 100%;
     }
 
     .header .container button {
@@ -201,7 +218,7 @@ main .container {
     }
 
     .main {
-        margin-bottom: 32rem;
+        height: auto;
     }
 
     .main .container {
@@ -210,7 +227,8 @@ main .container {
     }
 
     .main .item {
-        padding: 3rem 1rem 4rem;
+        padding: 3rem 1rem;
+        width: 100%;
     }
 
     .luxury-div {
